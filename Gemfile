@@ -46,3 +46,9 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# NOTE:
+# By sheer including mounted_app this application breaks.
+# As it modifies upper-engine inflector.
+
+gem "mounted_app", path: './mounted_app'
